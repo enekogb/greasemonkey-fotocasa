@@ -8,16 +8,38 @@
 // ==/UserScript==
 
 // Obtenemos el jquery que usa la pagina
-var $, jQuery;
-$ = jQuery = window.jQuery;
+var $;
 
-  console.log('Ejecutando userscript...');
-  console.log($('#search-listing'));
-  console.log('Ejecutado userscript...');
-  // Annadimos el css de FontAwesome a la pagina
-  //$("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='screen'>");
+// Add jQuery
+    (function(){
+        if (typeof unsafeWindow.jQuery == 'undefined') {
+            var GM_Head = document.getElementsByTagName('head')[0] || document.documentElement,
+                GM_JQ = document.createElement('script');
+    
+            GM_JQ.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+            GM_JQ.type = 'text/javascript';
+            GM_JQ.async = true;
+    
+            GM_Head.insertBefore(GM_JQ, GM_Head.firstChild);
+        }
+        GM_wait();
+    })();
 
-  // Buscamos las filas del listado de resultados
-  $('#search-listing').find('tr[data-adid]').each(function(index) {
-    console.log($(this));
-  });
+// Check if jQuery's loaded
+    function GM_wait() {
+        if (typeof unsafeWindow.jQuery == 'undefined') {
+            window.setTimeout(GM_wait, 100);
+        } else {
+            $ = unsafeWindow.jQuery.noConflict(true);
+            letsJQuery();
+        }
+    }
+
+// All your GM code must be inside this function
+    function letsJQuery() {
+        console.log('Ejecutando userscript...');
+        console.log($('#search-listing'));
+        console.log('Ejecutado userscript...');
+        console.log($().jquery); // check jQuery version
+    }
+  
