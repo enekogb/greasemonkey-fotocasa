@@ -11,7 +11,9 @@
 var $, jQuery;
 $ = jQuery = window.jQuery;
 
-$( window ).load(function() {
+$(window).bind("load", function() {
+  console.log('Ejecutando userscript...'):
+  
   // Annadimos el css de FontAwesome a la pagina
   $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='screen'>");
 
