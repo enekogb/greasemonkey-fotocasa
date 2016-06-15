@@ -2,7 +2,7 @@
 // @name        Fotocasa Listado Mejorado
 // @namespace   https://github.com/enekogb/greasemonkey-fotocasa
 // @description Mejoras en eel listado de Fotocasa
-// @include     http://www.fotocasa.es/*/listado
+// @include     /^https?://www\.fotocasa\.es/.*/listado.*$/
 // @version     1.0
 // @grant       none
 // ==/UserScript==
