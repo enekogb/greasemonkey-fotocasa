@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        Fondotop Portfolio Mejorado
-// @namespace   https://github.com/enekogb/monkeystar
-// @description Mejoras en el portfolio de Fondotop
-// @include     https://www.fondotop.com/fondotop*MAIN10
-// @version     1.0.6
+// @namespace   https://github.com/enekogb/greasemonkey-fotocasa
+// @description Mejoras en eel listado de Fotocasa
+// @include     http://www.fotocasa.es/*/listado
+// @version     1.0
 // @grant       none
 // ==/UserScript==
 
