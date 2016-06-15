@@ -7,7 +7,6 @@
 // @grant       none
 // ==/UserScript==
 
-// Obtenemos el jquery que usa la pagina
 var J;
 
 // Add jQuery
