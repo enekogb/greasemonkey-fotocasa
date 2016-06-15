@@ -12,7 +12,7 @@ var $, jQuery;
 $ = jQuery = window.jQuery;
 
   console.log('Ejecutando userscript...');
-  
+  console.log($('#search-listing'));
   // Annadimos el css de FontAwesome a la pagina
   //$("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='screen'>");
 
