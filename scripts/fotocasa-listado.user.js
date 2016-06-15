@@ -7,7 +7,7 @@
 // @grant       none
 // ==/UserScript==
 
-console.log(window.jQuery);
+console.log('Comprobando si jQuery esta cargado');
 
 // Obtenemos el jquery que usa la pagina
 var $, jQuery;
