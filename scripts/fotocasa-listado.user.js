@@ -7,6 +7,8 @@
 // @grant       none
 // ==/UserScript==
 
+console.log(window.jQuery);
+
 // Obtenemos el jquery que usa la pagina
 var $, jQuery;
 $ = jQuery = window.jQuery;
