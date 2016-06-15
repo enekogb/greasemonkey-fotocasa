@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Fondotop Portfolio Mejorado
+// @name        Fotocasa Listado Mejorado
 // @namespace   https://github.com/enekogb/greasemonkey-fotocasa
 // @description Mejoras en eel listado de Fotocasa
 // @include     http://www.fotocasa.es/*/listado
