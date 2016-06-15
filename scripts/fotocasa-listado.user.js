@@ -11,7 +11,6 @@
 var $, jQuery;
 $ = jQuery = window.jQuery;
 
-$(window).bind("load", function() {
   console.log('Ejecutando userscript...'):
   
   // Annadimos el css de FontAwesome a la pagina
@@ -21,4 +20,3 @@ $(window).bind("load", function() {
   $('#search-listing').find('tr [data-adid]').each(function(index) {
     console.log($(this));
   });
-});
